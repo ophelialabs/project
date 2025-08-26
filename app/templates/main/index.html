@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Flask App</h1>
+    <p class="lead">This is a modern Flask application with authentication, API endpoints, and more.</p>
+    {% if not current_user.is_authenticated %}
+        <hr class="my-4">
+        <p>Join us today to access all features!</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('auth.register') }}" role="button">Register Now</a>
+    {% endif %}
+</div>
+
+{% if current_user.is_authenticated %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Profile</h5>
+                <p class="card-text">Welcome back, {{ current_user.username }}!</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Dashboard</h5>
+                <p class="card-text">Your personalized dashboard content goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
