@@ -69,6 +69,9 @@ coverage report
 1. Set up production server (e.g., gunicorn):
 ```bash
 gunicorn -w 4 "app:create_app()"
+uwsgi --http :8000 --wsgi-file myapp.py --py-autoreload 1
+hadoop
+spark
 ```
 
 2. Configure nginx as reverse proxy
