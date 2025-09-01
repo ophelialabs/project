@@ -1,0 +1,29 @@
+# General Database packages
+pymysql
+psycopg2-binary
+sqlalchemy
+alembic
+
+# Oracle Integration
+cx_Oracle
+oracledb
+oracle-asmlib
+exadata-express-client
+
+# Amazon Integration
+boto3
+botocore
+amazon-dax-client
+aws-xray-sdk
+
+# Google Cloud Integration
+google-cloud-sql
+google-cloud-spanner
+google-cloud-datastore
+google-cloud-bigquery
+
+# IBM Integration
+ibm-db
+ibm-db-sa
+cloudant
+ibmcloudant

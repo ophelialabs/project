@@ -69,14 +69,19 @@ coverage report
 1. Set up production server (e.g., gunicorn):
 ```bash
 gunicorn -w 4 "app:create_app()"
+```
+For real-time reloads (e.g., code changes reflected instantly), you’d configure uWSGI with the --py-autoreload option:
+```
 uwsgi --http :8000 --wsgi-file myapp.py --py-autoreload 1
-hadoop
-spark
 ```
 
 2. Configure nginx as reverse proxy
 
-3. Set up SSL certificates
+3. Open firewall ports and configure secure access for remote users.
+
+4. Set up file synchronization (e.g., rsync, NFS) if code changes must propagate to multiple servers.
+
+5. Set up SSL certificates
 
 To use all these features:
 

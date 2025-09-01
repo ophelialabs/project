@@ -1,1 +1,3 @@
-init
+anthropic
+cohere
+llama-cpp-python
