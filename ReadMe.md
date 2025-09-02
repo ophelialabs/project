@@ -5,52 +5,70 @@ A full-featured Flask application with authentication, user profiles, admin pane
 Project Structure
 
 project/
-├── ai/
-│   ├── chat_assistants/
-│   │   └── base_assistant.py
-│   ├── integrations/
-│   ├── models/
-│   ├── pipelines/
-│   ├── vectorstores/
-│   ├── __init__.py
-│   └── config.py
-├── auth/
-│   ├── routes.py
-│   └── __init__.py
-├── config/
-│   └── config.py
-├── database/
-│   ├── migrations/
-│   ├── models/
-│   │   └── __init__.py
-│   └── scripts/
-├── docs/
-├── llm/
-│   ├── chains/
-│   ├── embeddings/
-│   ├── prompts/
-│   └── __init__.py
-├── logs/
-├── ml/
-│   ├── evaluation/
-│   ├── inference/
-│   ├── training/
-│   └── __init__.py
-├── project_name/
-│   ├── __init__.py
-│   ├── app.py
-│   └── wsgi.py
-├── static/
-│   ├── css/
-│   ├── images/
-│   └── js/
-├── templates/
-│   └── base.html
-├── tests/
-│   ├── integration/
-│   └── unit/
-├── utils/
-│   └── __init__.py
+    app/
+        ├── admin/
+            ├── routes.py
+        ├── ai/
+        │   ├── chat_assistants/
+        │   │   └── base_assistant.py
+        │   ├── integrations/
+        │   ├── models/
+        │   ├── pipelines/
+        │   ├── vectorstores/
+        │   ├── __init__.py
+        │   └── config.py
+        ├── api/
+            ├── __init__.py
+            ├── auth.py
+            ├── routes.py
+        ├── auth/
+        │   ├── routes.py
+        │   └── __init__.py
+        ├── config/
+        │   └── config.py
+        ├── database/
+        │   ├── migrations/
+        │   ├── models/
+        │   │   └── __init__.py
+        │   └── scripts/
+        ├── docs/
+        ├── errors/
+            ├── handlers.py
+        ├── llm/
+        │   ├── chains/
+        │   ├── embeddings/
+        │   ├── prompts/
+        │   └── __init__.py
+        ├── logs/
+        ├── main/
+            ├── __init__.py
+            ├── forms.py
+            ├── models.py
+            ├── routes.py
+        ├── ml/
+        │   ├── evaluation/
+        │   ├── inference/
+        │   ├── training/
+        │   └── __init__.py
+        ├── static/
+            ├── css/
+            ├── img/
+            ├── js
+        ├── project_name/
+        │   ├── __init__.py
+        │   ├── app.py
+        │   └── wsgi.py
+        ├── templates/
+        │   └── base.html
+        ├── tests/
+        │   ├── integration/
+        │   └── unit/
+        ├── utils/
+        │   └── __init__.py
+    ├── __init__.py
+    ├── email.py
+    ├── models.py
+    ├── wsgi.py
 ├── .env
 ├── .gitignore
 ├── apache_config.conf
