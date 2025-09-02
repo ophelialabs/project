@@ -2,6 +2,61 @@
 
 A full-featured Flask application with authentication, user profiles, admin panel, and more.
 
+Project Structure
+
+project_name/
+├── ai/
+│   ├── chat_assistants/
+│   │   └── base_assistant.py
+│   ├── integrations/
+│   ├── models/
+│   ├── pipelines/
+│   ├── vectorstores/
+│   ├── __init__.py
+│   └── config.py
+├── auth/
+│   ├── routes.py
+│   └── __init__.py
+├── config/
+│   └── config.py
+├── database/
+│   ├── migrations/
+│   ├── models/
+│   │   └── __init__.py
+│   └── scripts/
+├── docs/
+├── llm/
+│   ├── chains/
+│   ├── embeddings/
+│   ├── prompts/
+│   └── __init__.py
+├── logs/
+├── ml/
+│   ├── evaluation/
+│   ├── inference/
+│   ├── training/
+│   └── __init__.py
+├── project_name/
+│   ├── __init__.py
+│   ├── app.py
+│   └── wsgi.py
+├── static/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── templates/
+│   └── base.html
+├── tests/
+│   ├── integration/
+│   └── unit/
+├── utils/
+│   └── __init__.py
+├── .env
+├── .gitignore
+├── apache_config.conf
+├── requirements.txt
+└── uwsgi.ini</code></pre>
+
 ## Features
 
 - User Authentication
