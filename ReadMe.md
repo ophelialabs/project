@@ -4,7 +4,7 @@ A full-featured Flask application with authentication, user profiles, admin pane
 
 Project Structure
 
-project_name/
+project/
 ├── ai/
 │   ├── chat_assistants/
 │   │   └── base_assistant.py
