@@ -46,3 +46,6 @@ pyjwt
 flask-limiter
 bcrypt
 arcgis arcgis-mapping
+scipy 
+pandas
+matplotlib
