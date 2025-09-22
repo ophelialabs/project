@@ -45,3 +45,4 @@ flask-cors
 pyjwt
 flask-limiter
 bcrypt
+arcgis arcgis-mapping
